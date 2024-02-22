@@ -1,0 +1,15 @@
+select * from customer, orders where customer.Customer_id=orders.Customer_id
+
+select * from orders where Customer_id=101
+
+SELECT * FROM orders WHERE order_date > (sysdate - INTERVAL '1' MONTH)
+
+delete from orders where order_id=10
+
+select count(order_id)from orders
+
+select avg(Total_Amount) from orders
+
+update customer set phone_Number=6339693934 where customer_id=101
+
+

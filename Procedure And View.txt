@@ -1,0 +1,19 @@
+views:-
+
+create view custinfo as 
+select Customer_ID, First_Name, Last_Name 
+from customer
+
+select * from custinfo;
+
+
+Procedure:-
+
+create or replace procedure customerdetails as 
+begin 
+update customer set phone_number=3672862867 where Customer_ID=101; 
+end;
+
+call customerdetails
+
+

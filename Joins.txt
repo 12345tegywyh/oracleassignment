@@ -1,0 +1,31 @@
+Inner join
+
+SELECT orders.order_id, orders.order_date, customer.customer_id, customer.first_name, customer.Last_name 
+FROM orders 
+INNER JOIN customer ON orders.customer_id = customer.customer_id
+
+Left outer join
+
+SELECT orders.order_id, orders.order_date, customer.customer_id, customer.first_name, customer.Last_name 
+FROM orders 
+left outer join customer ON orders.customer_id = customer.customer_id
+
+Full outer join
+
+select customer.last_name,customer.phone_number,order_table.order_date,order_table.quantity,order_table.total_amount
+from customer
+full outer join order_table on customer.customer_id=order table.cust_id;
+
+Right outer join
+
+SELECT  
+    Orders.Order_ID, 
+    Orders.Order_Date, 
+    Customer.First_Name, 
+    Customer.Last_Name, 
+    Customer.Email_id 
+FROM 
+    Orders 
+RIGHT JOIN 
+    Customer ON Orders.Customer_ID = Customer.Customer_ID
+
